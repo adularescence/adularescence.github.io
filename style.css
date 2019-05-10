@@ -1,0 +1,66 @@
+* {
+  background-color: #ead7d1;
+  color: #1f1a38;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cursed-sites {
+  margin: 1.6em;
+}
+
+li {
+  list-style: none;
+  text-transform: lowercase;
+}
+
+.cursed-sites li {
+  display: inline;
+  margin: 5px;
+}
+
+h1 a{
+  color: #d9b;
+}
+
+a {
+  color: #7b506f;
+  text-decoration: none;
+}
+
+.images {
+  display: grid;
+  grid-gap: 1em;
+  grid-auto-columns: minmax(1em, auto);
+  justify-items: center;
+}
+
+@media(min-width: 400px) {
+  .images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 800px) {
+  .images {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 1200px) {
+  .images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(min-width: 1600px) {
+  .images {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.images > a {
+  width: 350px;
+  height: 350px;
+  border: 1px solid #7b506f;
+  background-position: center;
+  background-size: cover;
+}
