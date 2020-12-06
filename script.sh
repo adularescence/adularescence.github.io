@@ -16,7 +16,7 @@ done
 
 cd ../
 echo -n > index.html
-cat ../header.html >> index.html
+cat header.html >> index.html
 echo "    <h1><a href=\"../index.html\">images</a></h1>" >> index.html
 echo "    <div class=\"images\">" >> index.html
 for img in *; do
